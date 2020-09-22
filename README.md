@@ -4,7 +4,7 @@ miniLearn is video sharing app for allowing snipets of videos for programming an
 
 ## Important Links
 
-- [GitHub API Repo](https://github.com/worldwide-coders/educational-store-api)
+- [GitHub API Repo](https://github.com/danny-pantoja/miniLearn-django)
 - [Deployed API](https://mini-learn-django.herokuapp.com/)
 - [GitHub Repo](https://github.com/danny-pantoja/miniLearn-react)
 - [Deployed Client](https://danny-pantoja.github.io/miniLearn-react)
