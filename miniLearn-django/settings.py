@@ -33,7 +33,7 @@ if os.getenv('ENV') == 'development':
   CORS_ORIGIN_WHITELIST = ['http://localhost:7165']
 else:
   # If we are on production, use the dj_database_url package
-  # to locate the database based on Heroku setup
+  # to locate the database based on Heroku setupgit
   DB = dj_database_url.config()
   # Set debug to false
   DEBUG = False
