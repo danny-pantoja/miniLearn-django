@@ -6,7 +6,7 @@ class Videos(models.Model):
   # define fields
   # https://docs.djangoproject.com/en/3.0/ref/models/fields/
   name = models.CharField(max_length=100)
-  field_name = models.URLField(max_length=200)
+  field_name = models.URLField(max_length=250)
   description = models.CharField(max_length=100)
   owner = models.ForeignKey(
       get_user_model(),
