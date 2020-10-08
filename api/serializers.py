@@ -4,7 +4,7 @@ from rest_framework import serializers
 from .models.mango import Mango
 from .models.user import User
 from .models.instructor_content import InstructorContent
-from .models.videos import Videos
+from .models.video import Video
 
 class MangoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -58,7 +58,8 @@ class InstructorContentSerializer(serializers.Serializer):
         model = InstructorContent
         fields = ('id', 'instructor_content', 'content_availability', 'description', 'owner')
 
-class VideosSerializer(serializers.Serializer):
+class VideoSerializer(serializers.Serializer):
     class Meta:
-        model = Videos
-        fields = ('id', 'videos', 'field_name', 'description', 'owner')
+        model = Video
+        fields = ('id', 'title', 'description', 'owner')
+# come back to this

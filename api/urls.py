@@ -2,7 +2,7 @@ from django.urls import path
 from .views.mango_views import Mangos, MangoDetail
 from .views.user_views import SignUp, SignIn, SignOut, ChangePassword
 from .views.instructor_content_views import InstructorContent, InstructorContentDetails
-from .views.videos_views import Videos, VideosDetails
+from .views.video_views import Videos, VideoDetails
 
 urlpatterns = [
   	# Restful routing
@@ -15,6 +15,6 @@ urlpatterns = [
     path('instructor-content/', InstructorContent.as_view(), name='instructor_content'),
     path('instructor-content/<int:pk>/', InstructorContentDetails.as_view(), name='instructor_content'),
     path('videos/', Videos.as_view(), name='videos'),
-    path('videos/<int:pk>/', VideosDetails.as_view(), name='videos'),
+    path('videos/<int:pk>/', VideoDetails.as_view(), name='video_detail'),
 
 ]

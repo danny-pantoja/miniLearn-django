@@ -6,7 +6,7 @@ curl "http://localhost:8000/instructor-content/${ID}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Token ${TOKEN}" \
   --data '{
-    "instructor": {
+    "instructor_content": {
       "name": "'"${NAME}"'",
       "content": "'"${CONTENT}"'",
       "description": "'"${DESCRIPTION}"'"

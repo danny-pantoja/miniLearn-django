@@ -1,14 +1,13 @@
 #!/bin/bash
 
-curl "http://localhost:8000/videos/${ID}" \
+curl "http://localhost:8000/videos" \
   --include \
-  --request PATCH \
+  --request POST \
   --header "Content-Type: application/json" \
   --header "Authorization: Token ${TOKEN}" \
   --data '{
-    "videos": {
-      "name": "'"${NAME}"'",
-      "url": "'"${URL}"'",
+    "video": {
+      "title": "'"${TITLE}"'",
       "description": "'"${DESCRIPTION}"'"
     }
   }'
