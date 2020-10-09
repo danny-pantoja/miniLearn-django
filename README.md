@@ -42,7 +42,6 @@ Commands are run with the syntax `python3 manage.py <command>`:
 - Create styling for front end components.
 - Test, debug, troubleshoot and debug.
 - Reach for stretch goals
--
 
 ### User Stories
 
@@ -69,7 +68,7 @@ Commands are run with the syntax `python3 manage.py <command>`:
 - Gunicorn
 - WhiteNoise
 - Heroku
--
+
 ### Catalog of Routes
 
 | Verb   | URI Pattern            | Controller#Action      |
@@ -86,5 +85,5 @@ Commands are run with the syntax `python3 manage.py <command>`:
 
 
 
-## ERD
-![ERD_for_miniLearn](![wireframe_home](https://i.imgur.com/BUdwuSM.png))
+### ERD
+![ERD_for_miniLearn](https://i.imgur.com/BUdwuSM.png))
