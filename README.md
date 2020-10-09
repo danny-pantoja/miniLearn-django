@@ -86,4 +86,6 @@ Commands are run with the syntax `python3 manage.py <command>`:
 
 
 ### ERD
-![ERD_for_miniLearn](https://i.imgur.com/BUdwuSM.png))
+![ERD_for_miniLearn](https://i.imgur.com/NaAn2dF.png)
+
+---
