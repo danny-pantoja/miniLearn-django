@@ -53,12 +53,12 @@ class ChangePasswordSerializer(serializers.Serializer):
     old = serializers.CharField(required=True)
     new = serializers.CharField(required=True)
 
-class InstructorContentSerializer(serializers.Serializer):
+class InstructorContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = InstructorContent
         fields = ('id', 'instructor_content', 'content_availability', 'description', 'owner')
 
-class VideoSerializer(serializers.Serializer):
+class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
         fields = ('id', 'title', 'description', 'owner')

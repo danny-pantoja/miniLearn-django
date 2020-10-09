@@ -2,6 +2,30 @@
 
 miniLearn is video sharing app for allowing snipets of videos for programming and coding. I believe that fun and laughter are the best way to learn, here we can pass the knowledge of software engineering, by funny content.
 
+## Setup Steps
+
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this repository.
+2. Run `pipenv shell` to enter virtual environment.
+3. Run `pipenv install` to install dependencies.
+4. Create a psql database for your project
+- Edit settings.sql
+- Type psql to get into interactive shell.
+- Run CREATE DATABASE "project_db_name"; where project_db_name is the name you want for your database.
+5. Open the repository in Atom with `atom .`
+6. Add the database name to the `.env` file using the key `DB_NAME_DEV`.
+7. Replace all instances of `django_auth_template` with your application name. **This includes the folder included in this repository.**
+8. Generate a secret key using [this tool](https://djecrety.ir) and add it to the `.env` file using the key `SECRET`.
+
+## Commands
+
+Commands are run with the syntax `python3 manage.py <command>`:
+
+| command | action |
+|---------|--------|
+| `runserver`  |  Run the server |
+| `makemigrations`  | Generate migration files based on changes to models  |
+| `migrate`  | Run migration files to migrate changes to db  |
+| `startapp`  | Create a new app  |
 ## Important Links
 
 - [GitHub API Repo](https://github.com/danny-pantoja/miniLearn-django)
@@ -37,10 +61,30 @@ miniLearn is video sharing app for allowing snipets of videos for programming an
 
 ### Technologies Used
 
-- Django
 - Python
+- Django
+- PostgreSQL
+- cURL
+- Psycopg2
+- Gunicorn
+- WhiteNoise
+- Heroku
+-
+### Catalog of Routes
+
+| Verb   | URI Pattern            | Controller#Action      |
+|--------|------------------------|------------------------|
+| POST   | `/sign-up`             | `users#signup`         |
+| POST   | `/sign-in`             | `users#signin`         |
+| DELETE | `/sign-out`            | `users#signout`        |
+| PATCH  | `/change-password`     | `users#changepw`       |
+| GET    | `/videos`              | `videos#index`         |
+| GET    | `/videos/:id`          | `videos#show`          |
+| POST   | `/videos`              | `videos#create`        |
+| PATCH  | `/videos/:id`          | `videos#update`        |
+| DELETE | `/videos/:id`          | `videos#delete`        |
 
 
-## Images
 
-#### Wireframe:
+## ERD
+![ERD_for_miniLearn](![wireframe_home](https://i.imgur.com/BUdwuSM.png))
